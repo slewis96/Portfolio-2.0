@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5b5b5b;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+h2{
+  font-size: 2em;
+}
+u{
+  font-size: 1.5em;
+  text-decoration-color: #2d87ff;
+}
+.container{
+  margin-top: 5%;
+}
+.navbar{
+  padding: 2% 0%;
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  opacity: .9;
+  z-index: 3;
+  width: 100px;
+  height: 320px;
+}
+.btn{
+  margin-top: 2%;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+}
+.btn:hover, .btn:active:focus, .btn:active, .btn:focus{
+  outline: none;
+  color: white;
+  background-color: #2d87ff;
+}
+h1 {
+  font-family: Arimo;
+  font-size: 5em;
+  color: white;
+  font-weight: 10;
+  text-shadow: 0 3px 3px black;
+}
+
+h1 span {
+  color: #c77d1a;
+}
+
+.main-header {
+  padding-top: 4%;
+  height: 400px;
+  text-align: center;
+  margin-top: 0px;
+  background:	linear-gradient(0deg, #5b5b5b, transparent),
+            #5b5b5b url('../imgs/header.jpg') no-repeat;
+}
+
+.me {
+  border-radius: 100%;
+}
+
+.intro {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.intro p {
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 40px;
+}
+hr{
+  width: 100%;
+  border-top: 1px solid #2d87ff;
+}
+#Employment div{
+  margin-top: 2%;
+}
+h2 hr{
+  width: 15%;
+  margin: .8% 2%;
+  display: inline-block;
+}
+h2 hr:first-of-type{
+  margin: .8% 2% .8% 0%;
+}
+
+.table > thead > tr > th, .table > tbody > tr > td, .table > tbody + tbody{
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.table{
+  border: none;
+}
+
+th, tbody, thead, td{
+  font-weight: normal;
+  border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B7B7B7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
