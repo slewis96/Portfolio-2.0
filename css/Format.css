@@ -1,23 +1,64 @@
+/*HTML attirbutes*/
 * {
   box-sizing: border-box;
 }
-
 body {
-  background-color: #5b5b5b;
+  opacity: 0;
+  background: #5b5b5b;
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   margin: 0;
   font-size: 1.5em;
   color: white;
+  overflow-x: hidden;
+}
+header{
+  display: block;
+  z-index: 3;
+  height: 500px;
+  background: linear-gradient(0deg, #5b5b5b, transparent),
+            #5b5b5b url('../imgs/header.jpg') no-repeat;
+}
+.wrapper{
+  display: block;
+  z-index: 3;
+}
+h1 {
+  font-family: Arimo;
+  font-size: 5em;
+  color: white;
+  font-weight: 10;
+  text-shadow: 0 3px 3px black;
 }
 h2{
   font-size: 2em;
+  margin-bottom: 2%;
 }
 u{
   font-size: 1.5em;
   text-decoration-color: #2d87ff;
 }
+hr{
+  width: 100%;
+  border-top: 1px solid #2d87ff;
+}
+h2 hr{
+  width: 15%;
+  margin: .8% 2%;
+  display: inline-block;
+}
+h2 hr:first-of-type{
+  margin: .8% 2% .8% 0%;
+}
+sub{
+  font-size: 85%;
+}
+
+/*Bootstrap container and navbar*/
 .container{
   margin-top: 5%;
+}
+.container:first-of-type{
+  margin-top: 0%;
 }
 .navbar{
   padding: 2% 0%;
@@ -28,6 +69,7 @@ u{
   z-index: 3;
   width: 100px;
   height: 320px;
+  border-radius: 0px 15px 15px 0px;
 }
 .btn{
   margin-top: 2%;
@@ -41,60 +83,36 @@ u{
   color: white;
   background-color: #2d87ff;
 }
-h1 {
-  font-family: Arimo;
-  font-size: 5em;
-  color: white;
-  font-weight: 10;
-  text-shadow: 0 3px 3px black;
-}
 
-h1 span {
-  color: #c77d1a;
-}
-
-.main-header {
-  padding-top: 4%;
-  height: 400px;
-  text-align: center;
-  margin-top: 0px;
-  background:	linear-gradient(0deg, #5b5b5b, transparent),
-            #5b5b5b url('../imgs/header.jpg') no-repeat;
-}
-
-.me {
-  border-radius: 100%;
-}
-
+/*Intro*/
 .intro {
   font-size: 1.5em;
   color: white;
   text-align: center;
-  margin: auto;
-  margin-top: 5%;
+  margin-top: 1%;
+  justify-content: center;
+  display: flex;
 }
-
+.me {
+  margin: 2.5% 0%;
+  border-radius: 100%;
+}
 .intro p {
   margin-left: 20%;
   margin-right: 20%;
   line-height: 40px;
+  flex-wrap: nowrap;
 }
-hr{
-  width: 100%;
-  border-top: 1px solid #2d87ff;
+#intro{
+  text-align:center;
 }
-#Employment div{
-  margin-top: 2%;
-}
-h2 hr{
-  width: 15%;
-  margin: .8% 2%;
-  display: inline-block;
-}
-h2 hr:first-of-type{
-  margin: .8% 2% .8% 0%;
+#intro hr{
+  margin: 0;
+  flex-wrap: nowrap;
 }
 
+
+/*Bootstrap Table Fix*/
 .table > thead > tr > th, .table > tbody > tr > td, .table > tbody + tbody{
   border-bottom: 0;
   border-top: 0;
@@ -104,11 +122,36 @@ h2 hr:first-of-type{
   border: none;
 }
 
-th, tbody, thead, td{
+th{
   font-weight: normal;
-  border: none;
 }
 
+/*Mobile*/
+@media only screen and (max-width: 1150px){
+  .container{
+    margin-left: 89px;
+  }
+}
+@media only screen and (max-width: 1050px){
+  .container{
+    margin-left: 89px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 3em;
+  }
+  sub{
+    font-size: 75%;
+  }
+  .intro p{
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: .6em;
+  }
+}
+
+/*Scrollbar*/
 /* width */
 ::-webkit-scrollbar {
   width: 8.5px;
@@ -116,12 +159,12 @@ th, tbody, thead, td{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  background: #5b5b5b;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #B7B7B7;
+  background: #2d87ff;
 }
 
 /* Handle on hover */
