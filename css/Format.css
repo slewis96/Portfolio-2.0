@@ -19,7 +19,7 @@ header{
             #5b5b5b url('../imgs/header.jpg') no-repeat;
 }
 .wrapper{
-  display: block;
+  position: absolute;
   z-index: 3;
 }
 h1 {
