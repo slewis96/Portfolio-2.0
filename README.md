@@ -3,7 +3,7 @@
 
 - [ ] Add Company and University images
 - [x] Fix background
-- [ ] Ensure no overflow on text (check padding)
+- [ ] Ensure no overflow on text (check padding) (check boostrap)
 - [x] Ensure no overlap on text and navbar
 - [ ] **Set active button based on viewpoint**
 - [ ] Slide away media query
