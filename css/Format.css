@@ -18,10 +18,6 @@ header{
   background: linear-gradient(0deg, #5b5b5b, transparent),
             #5b5b5b url('../imgs/header.jpg') no-repeat;
 }
-.wrapper{
-  position: absolute;
-  z-index: 3;
-}
 h1 {
   font-family: Arimo;
   font-size: 5em;
@@ -42,7 +38,7 @@ hr{
   border-top: 1px solid #2d87ff;
 }
 h2 hr{
-  width: 15%;
+  width: 10%;
   margin: .8% 2%;
   display: inline-block;
 }
@@ -54,8 +50,12 @@ sub{
 }
 
 /*Bootstrap container and navbar*/
+.wrapper{
+  margin-top:250px;
+}
 .container{
   margin-top: 5%;
+  margin-left: 105px;
 }
 .container:first-of-type{
   margin-top: 0%;
