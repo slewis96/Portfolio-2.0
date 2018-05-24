@@ -76,19 +76,30 @@ sub{
   padding: 2% 0%;
   text-align: center;
   position: fixed;
-  top: 30%;
+  top: 20%;
   opacity: .9;
   z-index: 3;
   width: 100px;
   height: 320px;
   border-radius: 0px 15px 15px 0px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 #nav-mobile{
   display: none;
+  top: 0%;
   width: 50px;
-  height: 80px;
-  border-radius: 0px 50% 50% 0px;
-  padding: 25px 0%;
+  height: 50px;
+  border-radius: 0px 0% 50% 0px;
+  padding: 10px 0%;
+}
+#nav-main2{
+  display: none;
+  opacity: .7;
+  top: 0%;
+  height: 345px;
+  padding-top: 45px;
+  border-radius: 0px 0px 15px 15px;
 }
 .btn{
   margin-top: 2%;
@@ -149,6 +160,12 @@ th{
 }
 
 /*Mobile*/
+
+@media only screen and (min-width: 768px){
+  #nav-main2{
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px){
   .container{
     margin-left: 50px;

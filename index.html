@@ -16,8 +16,16 @@
       <hr>
       <a href=""><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
     </nav>
+    <nav id="nav-main2" class="navbar navbar-inverse">
+      <a href="#top"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
+      <a href="#Employment"><button type="button" class="btn btn-default navbar-btn">Employment</button></a>
+      <a href="#Education"><button type="button" class="btn btn-default navbar-btn">Education</button></a>
+      <a href="#Skills"><button type="button" class="btn btn-default navbar-btn">Skills</button></a>
+      <hr>
+      <a href=""><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
+    </nav>
     <nav id="nav-mobile" class="navbar navbar-inverse">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
     </nav>
     <header id="top" class="main-header">
       <div id="intro" class="container">
@@ -164,6 +172,9 @@
       $(function() {
   			$(document).ready(function() {
   			     $(document.body).animate({opacity: 1}, 1200);
+        })
+        $("#nav-mobile").click(function(){
+             $("#nav-main2").slideToggle();
         })
       })
     </script>
