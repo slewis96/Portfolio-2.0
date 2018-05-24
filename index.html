@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/Format.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -14,7 +15,7 @@
       <a href="#Education"><button type="button" class="btn btn-default navbar-btn">Education</button></a>
       <a href="#Skills"><button type="button" class="btn btn-default navbar-btn">Skills</button></a>
       <hr>
-      <a href=""><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
+      <a href="webproj.html"><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
     </nav>
     <nav id="nav-main2" class="navbar navbar-inverse">
       <a href="#top"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
@@ -22,14 +23,14 @@
       <a href="#Education"><button type="button" class="btn btn-default navbar-btn">Education</button></a>
       <a href="#Skills"><button type="button" class="btn btn-default navbar-btn">Skills</button></a>
       <hr>
-      <a href=""><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
+      <a href="webproj.html"><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
     </nav>
     <nav id="nav-mobile" class="navbar navbar-inverse">
       <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
     </nav>
     <header id="top" class="main-header">
       <div id="intro" class="container">
-        <img class="me" src="imgs/me.jpeg" alt="profile image">
+        <img id="me" class="me" src="imgs/me.jpeg" alt="profile image">
         <h1>Sebastian Lewis</h1>
         <div class="intro">
           <p>A hard working enthusiastic Junior Technical Consultant seeking any opportunity to utilize his skills, challenge himself and add value to any business.<br></p>
@@ -170,12 +171,27 @@
     <script src="js/jquery-3.2.1.min.js"></script>
 	  <script>
       $(function() {
+        //Fadein and bounce picture
   			$(document).ready(function() {
   			     $(document.body).animate({opacity: 1}, 1200);
+             $("#me").delay(500).queue(function(){
+               $('#me').addClass("animated bounce");
+               setTimeout(function () {
+                  $('#me').removeClass("animated bounce");
+                }, 2000);
+             })
         })
+        //Toggle Menu
         $("#nav-mobile").click(function(){
              $("#nav-main2").slideToggle();
         })
+        //Ensure the mobile menu is closed on resize
+        $(document).load($(window).bind("resize", checkPosition));
+        function checkPosition() {
+            if (window.matchMedia('(min-width: 768px)').matches) {
+              $("#nav-main2").css('display','none');
+            }
+        }
       })
     </script>
   </body>
