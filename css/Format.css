@@ -4,7 +4,16 @@
 }
 body {
   opacity: 0;
-  background: #5b5b5b;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+  /* background-color: #131313; */
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   margin: 0;
   font-size: 1.5em;
@@ -12,11 +21,12 @@ body {
   overflow-x: hidden;
 }
 header{
+  background: linear-gradient(0deg, #131313, transparent),
+            #131313 url('../imgs/header2.jpg') no-repeat;
+  box-shadow: 10px 10px 100px 20px #131313;
   display: block;
   z-index: 3;
-  height: 500px;
-  background: linear-gradient(0deg, #5b5b5b, transparent),
-            #5b5b5b url('../imgs/header.jpg') no-repeat;
+  height: 480px;
 }
 h1 {
   font-family: Arimo;
@@ -54,7 +64,7 @@ sub{
   margin-top:250px;
 }
 .container{
-  margin-top: 5%;
+  margin-top: 14%;
   margin-left: 105px;
   margin-right: 10px;
 }
@@ -109,6 +119,7 @@ sub{
 .intro p {
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 5%;
   line-height: 40px;
   flex-wrap: nowrap;
 }
@@ -149,6 +160,11 @@ th{
     display: block;
   }
 }
+@media only screen and (max-width: 504px){
+    .intro p{
+      height:
+    }
+}
 @media only screen and (max-width: 790px){
   .knowledge table{
     border: none;
@@ -164,6 +180,7 @@ th{
   .intro p{
     margin-left: 0%;
     margin-right: 0%;
+    margin-bottom: 10%;
     font-size: .6em;
   }
 }
@@ -176,7 +193,7 @@ th{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #5b5b5b;
+  background: #131313;
 }
 
 /* Handle */
