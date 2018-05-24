@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <nav id="nav-main" class="navbar navbar-inverse">
       <a href="#top"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
       <a href="#Employment"><button type="button" class="btn btn-default navbar-btn">Employment</button></a>
       <a href="#Education"><button type="button" class="btn btn-default navbar-btn">Education</button></a>
       <a href="#Skills"><button type="button" class="btn btn-default navbar-btn">Skills</button></a>
       <hr>
       <a href=""><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
+    </nav>
+    <nav id="nav-mobile" class="navbar navbar-inverse">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     </nav>
     <header id="top" class="main-header">
       <div id="intro" class="container">
@@ -108,10 +111,10 @@
     <div id="Skills" class="container">
       <h2><hr>Skills<hr></h2>
       <div class="row">
-        <div class="col-sm-4">
-          <u>Knowledge in/Experience with:</u>
+        <div class="col-sm-5 knowledge">
           <table class="table">
               <thead>
+                <u>Knowledge in/Experience with:</u>
               </thead>
               <tbody>
                 <td style="width: 50%;">&emsp;<sub><li>HTML</li></sub></td>

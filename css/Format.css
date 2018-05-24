@@ -56,11 +56,13 @@ sub{
 .container{
   margin-top: 5%;
   margin-left: 105px;
+  margin-right: 10px;
 }
 .container:first-of-type{
   margin-top: 0%;
 }
 .navbar{
+  display: block;
   padding: 2% 0%;
   text-align: center;
   position: fixed;
@@ -70,6 +72,13 @@ sub{
   width: 100px;
   height: 320px;
   border-radius: 0px 15px 15px 0px;
+}
+#nav-mobile{
+  display: none;
+  width: 50px;
+  height: 80px;
+  border-radius: 0px 50% 50% 0px;
+  padding: 25px 0%;
 }
 .btn{
   margin-top: 2%;
@@ -121,20 +130,28 @@ sub{
 .table{
   border: none;
 }
-
 th{
   font-weight: normal;
 }
+.knowledge table{
+  border-right: 1px solid #3e3e3e;
+}
 
 /*Mobile*/
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 768px){
   .container{
-    margin-left: 89px;
+    margin-left: 50px;
+  }
+  #nav-main{
+    display: none;
+  }
+  #nav-mobile{
+    display: block;
   }
 }
-@media only screen and (max-width: 1050px){
-  .container{
-    margin-left: 89px;
+@media only screen and (max-width: 790px){
+  .knowledge table{
+    border: none;
   }
 }
 @media only screen and (max-width: 992px) {
