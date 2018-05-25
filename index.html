@@ -10,10 +10,10 @@
   </head>
   <body>
     <nav id="nav-main" class="navbar navbar-inverse">
-      <a href="#top"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
-      <a href="#Employment"><button type="button" class="btn btn-default navbar-btn">Employment</button></a>
-      <a href="#Education"><button type="button" class="btn btn-default navbar-btn">Education</button></a>
-      <a href="#Skills"><button type="button" class="btn btn-default navbar-btn">Skills</button></a>
+      <button onclick="nextScroll('.o0')" type="button" class="btn btn-default navbar-btn">Home</button>
+      <button onclick="nextScroll('.o1')" type="button" class="btn btn-default navbar-btn">Employment</button>
+      <button onclick="nextScroll('.o2')" type="button" class="btn btn-default navbar-btn">Education</button>
+      <button onclick="nextScroll('.o3')" type="button" class="btn btn-default navbar-btn">Skills</button>
       <hr>
       <a href="webproj.html"><button type="button" class="btn btn-default navbar-btn">Websites<br> & <br> Project</button></a>
     </nav>
@@ -28,23 +28,25 @@
     <nav id="nav-mobile" class="navbar navbar-inverse">
       <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
     </nav>
-    <header id="top" class="main-header">
-      <div id="intro">
-        <img id="me" class="me" src="imgs/me.jpeg" alt="profile image">
-        <h1>Sebastian Lewis</h1>
-        <div class="intro">
-          <p>A hard working enthusiastic Junior Technical Consultant seeking any opportunity to utilize his skills, challenge himself and add value to any business.<br></p>
+    <div class="overlay o0">
+      <header id="top" class="main-header">
+        <div id="intro">
+          <img id="me" class="me" src="imgs/me.jpeg" alt="profile image">
+          <h1>Sebastian Lewis</h1>
+          <div class="intro">
+            <p>A hard working enthusiastic Junior Technical Consultant seeking any opportunity to utilize his skills, challenge himself and add value to any business.<br></p>
+          </div>
+          <hr>
+          <a><img onclick="nextScroll()" class="arrow" src="imgs/downarrow.png" alt="Down arrow" width="40px"></a>
         </div>
-        <hr>
-        <a href="#Employment"><img class="arrow" src="imgs/downarrow.png" alt="Down arrow" width="40px"></a>
-      </div>
-    </header>
-    <div class="overlay">
+      </header>
+    </div>
+    <div class="overlay o1">
       <div id="Employment" class="container">
         <h2><hr>Employment<hr></h2>
         <div class="col-sm-6">
           <u>Current Employment:</u><br>
-            Junior Technical Consultant at Sparta Global<br> <img src="imgs/sp.png" width="100px";><br>
+            Junior Technical Consultant at Sparta Global<br> <a href="https://www.spartaglobal.com/" target="_blank"><img src="imgs/sp.png" width="100px";></a><br>
             May 2018 - Present<br>
             <sub>
               I started training at Sparta Global in their Birmingham Academy in May I have only been there a few weeks but have learnt a lot about how to refine my skills to ensure they are at a professional level. I am currently in their Technical Stream training for SDET Technial Consultant. I have been/will be covering topics such as:
@@ -57,7 +59,7 @@
         </div>
         <div class="col-sm-6">
           <u>Volunteer Experience:</u><br>
-            Computer Volunteer​ at Northfield Community Partnership<br> <img src="imgs/ncp.png" width="100px";><br>
+            Computer Volunteer​ at Northfield Community Partnership<br> <a href="https://www.northfieldcommunity.org/" target="_blank"><img src="imgs/ncp.png" width="100px";></a><br>
             January 2018 - May 2018<br>
             <sub>
               As a way to help gain experience, improve my skills, and just help out I started volunteering at this local centre which specialises in helping anyone who is unemployed. Whilst there my responsibilities included:
@@ -66,13 +68,13 @@
         </div>
       </div>
     </div>
-    <div class="overlay2">
+    <div class="overlay o2">
       <div id="Education" class="container">
         <h2><hr>Education<hr></h2>
         <div class="row">
           <div class="col-sm-12">
             <u>University</u><br>
-              University Of Birmingham<br> <img src="imgs/uob.png" width="125px";><br>
+              University Of Birmingham<br> <a href="https://www.birmingham.ac.uk/index.aspx" target="_blank"><img src="imgs/uob.png" width="125px";></a><br>
               2014 - 2017<br>
               BSc Computer Science<br>
               <sub>
@@ -114,9 +116,9 @@
               </sub>
           </div>
         </div>
+      </div>
     </div>
-    </div>
-    <div class="overlay3">
+    <div class="overlay o3">
       <div id="Skills" class="container">
         <h2><hr>Skills<hr></h2>
         <div class="row">
@@ -171,7 +173,8 @@
     </div>
     <footer id="footer">
     </footer>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
 	  <script>
       $(function() {
         //Fadein and bounce picture
@@ -197,5 +200,6 @@
         }
       })
     </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
