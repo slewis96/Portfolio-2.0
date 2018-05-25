@@ -38,6 +38,7 @@ h1 {
 h2{
   font-size: 2em;
   margin-bottom: 2%;
+  background: ;
 }
 u{
   font-size: 1.5em;
@@ -59,10 +60,23 @@ sub{
   font-size: 85%;
 }
 
-/*Bootstrap container and navbar*/
-.wrapper{
-  margin-top:250px;
+/*Section Overlays*/
+.overlay, .overlay2, .overlay3{
+    height: 100vh;
+    box-shadow: 0px 10px 100px 10px black;
 }
+.overlay{
+  margin-top: 320px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.overlay2{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.overlay3{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Bootstrap container and navbar*/
 .container{
   margin-top: 14%;
   margin-left: 105px;
@@ -157,6 +171,8 @@ figcaption{
   margin-bottom: 5%;
 }
 .intro {
+  margin-left: 100px;
+  margin-right: 100px;
   font-size: 1.5em;
   color: white;
   text-align: center;
@@ -245,6 +261,9 @@ th{
   .webcont img{
     width: 250px;
   }
+  .overlay, .overlay2, .overlay3{
+    height: 140vh;
+  }
 }
 @media only screen and (max-width: 648px){
   .projcont img{
@@ -255,6 +274,16 @@ th{
     .intro p{
       height:
     }
+}
+@media only screen and (max-width: 490px){
+  .overlay{
+    height: 160vh;
+  }
+}
+@media only screen and (max-width: 416px){
+  .overlay{
+    height: 190vh;
+  }
 }
 /*Scrollbar*/
 /* width */
