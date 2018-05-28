@@ -59,7 +59,13 @@ h2 hr:first-of-type{
 sub{
   font-size: 85%;
 }
-
+img{
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+}
+img:hover{
+  transform: scale(1.05);
+}
 /*Section Overlays*/
 .overlay{
     height: 100%;
@@ -76,6 +82,9 @@ sub{
 }
 .o3{
   background-color: rgba(0, 0, 0, 0.5);
+}
+.o4{
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*Bootstrap container and navbar*/
@@ -123,7 +132,7 @@ figcaption{
   z-index: 3;
   top: 20%;
   width: 100px;
-  height: 320px;
+  height: 360px;
   border-radius: 0px 15px 15px 0px;
   -webkit-transition: width 1s;
   transition: width 1s;
@@ -140,8 +149,8 @@ figcaption{
   display: none;
   opacity: .7;
   top: 0%;
-  height: 345px;
-  padding-top: 45px;
+  height: 365px;
+  padding-top: 40px;
   border-radius: 0px 0px 15px 0px;
 }
 #nav-main3{
@@ -166,7 +175,11 @@ figcaption{
   color: white;
   background-color: #2d87ff;
 }
-
+#nav-main .active{
+  outline: none;
+  color: white;
+  background-color: #2d87ff;
+}
 /*Intro*/
 .main-headerP{
   height: 200px;
@@ -202,7 +215,12 @@ figcaption{
   margin: 0;
   flex-wrap: nowrap;
 }
-
+#Contact{
+  text-align: center;
+}
+#Contact div{
+  padding: 1.5% 0%;
+}
 
 /*Bootstrap Table Fix*/
 .table > thead > tr > th, .table > tbody > tr > td, .table > tbody + tbody{
@@ -259,6 +277,18 @@ th{
   }
   #nav-mobile{
     display: block;
+  }
+  .container img{
+    display: none;
+  }
+  .container{
+    font-size: 16px;
+  }
+  .container u{
+    font-size: 17px;
+  }
+  .container sub{
+    font-size: 75%;
   }
   .webcont img{
     width: 250px;
